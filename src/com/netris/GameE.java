@@ -229,12 +229,10 @@ public class GameE {
 	{
 		int tempblock[] = new int[10];
 		
-		//System.arraycopy(nblock[line], 0, tempblock, 0, 10);
 		for (int i = 0 ; i < 10 ; i++)
 		{
 			tempblock[i] = 
 				nblock[i][line];
-			System.out.println(nblock[i][line] + "/");
 		}
 		animate v = new animate(0,(line-5)*20, tempblock);
 		vt.add(v);
@@ -262,9 +260,6 @@ public class GameE {
 			{
 				aniDelete(i);
 				this.deleteLine(i);
-//				Vibrator vb = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
-//				vb.vibrate(1000);
-//				vibhandler.PutMassage();
 	
 				tscore += 1;
 				i++;
@@ -373,23 +368,6 @@ public class GameE {
 			}
 		}
 		catch(ArrayIndexOutOfBoundsException e){
-
-//			if (Integer.parseInt(e.getMessage()) >= 25)
-//			{
-//				return Flag.WALL_TOUCH_BOTTOM;
-//			}
-//			else if (Integer.parseInt(e.getMessage()) >= 10)
-//			{
-//				return Flag.WALL_TOUCH_RIGHT;
-//			}
-//			else if (Integer.parseInt(e.getMessage()) < 0)
-//			{
-//				return Flag.WALL_TOUCH_LEFT;
-//			}
-//			else
-//			{
-//				return Flag.WALL_TOUCH_BOTTOM;
-//			}
 		}
 		return Flag.NOT_TOUCH;
 	}

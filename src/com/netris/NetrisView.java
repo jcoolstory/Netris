@@ -312,8 +312,6 @@ public class NetrisView extends MainView {
 	    canvas.drawText("LEVEL"  , getWidth() - 10, 300, mPaint);
 	    canvas.drawText(String.valueOf(this.levelInt)  ,  getWidth() - 10, 330, mPaint);
 	    
-	   // 
-		//Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 		mPaint.setColor(Color.WHITE);
 		mPaint.setShadowLayer(10, 1, 1, Color.BLUE);
 		mPaint.setAlpha(150);
@@ -321,8 +319,6 @@ public class NetrisView extends MainView {
 		if (bshowguide)
 		{
 		
-			
-		//	Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 			mPaint.setAlpha(50);
 			canvas.drawBitmap(leftBitmap, 0 , height/ 2, mPaint);
 	        canvas.drawBitmap(rightBitmap, width - rightBitmap.getWidth()  , height/ 2, mPaint);
@@ -332,21 +328,12 @@ public class NetrisView extends MainView {
 		}
 		if (this.getState() == GameState.READY)
 		{		
-	
-		
-		//canvas.drawRect(0, 0, width, height, mPaint);
 			int textSize = 40;
-	// mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 			mPaint.setColor(Color.RED);
 			mPaint.setTextAlign(Align.CENTER);
 			mPaint.setTextSize(textSize);
 			mPaint.setAlpha(150);
 			
-			
-			
-	//		int width = getWidth();
-	//		int height = getHeight();
-			//canvas.drawRect(0, 0, width, height, mPaint);
 			
 			String text = "Touch Screen";
 			canvas.drawText(text, width / 2, height / 2 - textSize, mPaint);
@@ -362,17 +349,10 @@ public class NetrisView extends MainView {
 		if (this.getState() == GameState.STOP)
 		{
 			int textSize = 40;
-	//		Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 			mPaint.setColor(Color.RED);
 			mPaint.setTextAlign(Align.CENTER);
 			mPaint.setTextSize(textSize);
 			mPaint.setAlpha(150);
-			
-			
-			
-	//		int width = getWidth();
-	//		int height = getHeight();
-			//canvas.drawRect(0, 0, width, height, mPaint);
 			
 			String text = "Touch Screen";
 			canvas.drawText(text, width / 2, height / 2 - textSize, mPaint);
@@ -383,17 +363,10 @@ public class NetrisView extends MainView {
 		if (this.getState() == GameState.END)
 		{
 			int textSize = 40;
-	//		Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 			mPaint.setColor(Color.RED);
 			mPaint.setTextAlign(Align.CENTER);
 			mPaint.setTextSize(textSize);
 			mPaint.setAlpha(150);
-			
-			
-			
-	//		int width = getWidth();
-	//		int height = getHeight();
-			//canvas.drawRect(0, 0, width, height, mPaint);
 			
 			String text = "Touch Screen";
 			canvas.drawText(text, width / 2, height / 2 - textSize, mPaint);

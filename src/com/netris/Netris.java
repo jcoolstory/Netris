@@ -29,7 +29,6 @@ public class Netris extends Activity {
 				System.out.println("msg");
         	Bundle b = msg.getData();
         	long length = b.getLong(vibrateBundleKey);
-        	//length = msg.arg1;
         	Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         	vibrator.vibrate(length);
         	System.out.println(length);
@@ -52,12 +51,7 @@ public class Netris extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         mView = new NetrisView(this);
-        //setContentView(R.layout.main);
-        
-        //mView = (NetrisView) findViewById(R.id.netris);
         setContentView(mView);
-        
-        
     }
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onDestroy()
